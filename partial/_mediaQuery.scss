@@ -1,0 +1,69 @@
+@media only screen and (min-width: $small) {
+}
+
+@media only screen and (min-width: $medium) {
+	div.hamburger, span.exit-responsive{
+		display: none;
+	}
+	.main_logo{
+		width: 60px;
+	}
+	div.desktopmenu{
+		padding-top: 5vh;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		.topbar{
+			padding: 0;
+			width: 50%;
+		}
+		.menu{
+			width: 30%;
+			align-self: flex-end;
+		}
+	}
+
+	div.menu{
+		display: block;
+	 	display: flex;
+	 	flex-flow: row nowrap;
+
+	 	ul{
+			position: relative;
+			display: flex;
+			flex-flow: row nowrap;
+			background-color: transparent;
+			align-items: center;
+			justify-content: flex-end;
+			z-index: 999;
+			li{
+				display: inline-block;
+				padding: 10px;
+				a{
+					font-size: 1.6rem;
+					padding: 0;
+				}
+			}
+	 	}
+
+	}
+	header .header_content{
+		margin-top: 15%;
+		p{
+			width: 80%;
+		}
+	}
+}
+
+@media only screen and (min-width: $large) {
+	header .header_content{
+		margin-top: 10%;
+		div.CTA{
+		margin-top: 5%;
+		}
+		p{
+			width: 70%;
+		}
+	}	
+}
